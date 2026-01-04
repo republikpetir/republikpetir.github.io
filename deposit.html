@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit Mahjong Slot</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="Mahjong Slot Logo">
+        </div>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+    
+    <section class="transaction">
+        <h1>Deposit Saldo</h1>
+        <form id="depositForm">
+            <label for="amount">Jumlah (Rp)</label>
+            <input type="number" id="amount" min="10000" required>
+            
+            <label for="method">Metode</label>
+            <select id="method">
+                <option value="ewallet">E-Wallet (GoPay, OVO)</option>
+                <option value="bank">Transfer Bank</option>
+            </select>
+            
+            <button type="submit" class="btn-primary">Deposit</button>
+        </form>
+        <div class="instructions">
+            <h3>Instruksi:</h3>
+            <ol>
+                <li>Pilih metode dan jumlah.</li>
+                <li>Ikuti instruksi pembayaran.</li>
+                <li>Saldo akan masuk instan.</li>
+            </ol>
+        </div>
+        <p>Status: Menunggu konfirmasi</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Mahjong Slot. Semua hak dilindungi.</p>
+        <nav>
+            <a href="#">Bantuan</a>
+            <a href="#">Syarat & Ketentuan</a>
+            <a href="#">Kebijakan Privasi</a>
+            <a href="#">Kontak CS</a>
+        </nav>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
