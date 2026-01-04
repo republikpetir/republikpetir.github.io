@@ -1,0 +1,299 @@
+/* Reset dan Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000; /* Hitam eksklusif */
+    color: #FFD700; /* Emas untuk teks */
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #006400; /* Hijau tua premium */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.logo img {
+    height: 50px;
+}
+nav a {
+    margin: 0 1rem;
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #FFF;
+}
+
+/* Tombol */
+.btn-primary {
+    background-color: #FFD700; /* Emas */
+    color: #000;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.btn-primary:hover {
+    background-color: #FFA500; /* Emas gelap */
+}
+.btn-secondary {
+    background-color: #006400; /* Hijau tua */
+    color: #FFD700;
+    border: 1px solid #FFD700;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.btn-secondary:hover {
+    background-color: #004400;
+}
+.btn-cta {
+    background-color: #FFD700;
+    color: #000;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0.5rem;
+    transition: background-color 0.3s;
+}
+.btn-cta:hover {
+    background-color: #FFA500;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background: linear-gradient(135deg, #000, #006400);
+    min-height: 60vh;
+}
+.hero-content {
+    flex: 1;
+    max-width: 50%;
+}
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.hero-image {
+    flex: 1;
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Features */
+.features {
+    padding: 2rem;
+    text-align: center;
+    background-color: #111; /* Hitam gelap */
+}
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.feature-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.feature {
+    flex: 1;
+    min-width: 250px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #006400;
+    border-radius: 10px;
+}
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Form Section (Login/Register) */
+.form-section {
+    padding: 2rem;
+    max-width: 400px;
+    margin: 2rem auto;
+    background-color: #111;
+    border-radius: 10px;
+    text-align: center;
+}
+.form-section h1 {
+    margin-bottom: 1rem;
+}
+.form-section form {
+    display: flex;
+    flex-direction: column;
+}
+.form-section label {
+    margin-top: 1rem;
+    text-align: left;
+}
+.form-section input {
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #FFD700;
+    border-radius: 5px;
+    background-color: #000;
+    color: #FFD700;
+}
+.form-section button {
+    margin-top: 1.5rem;
+}
+
+/* Dashboard */
+.dashboard {
+    padding: 2rem;
+    text-align: center;
+}
+.balance {
+    margin-bottom: 2rem;
+}
+.actions {
+    margin-bottom: 2rem;
+}
+.history {
+    background-color: #111;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+.history ul {
+    list-style: none;
+    padding: 0;
+}
+.history li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #FFD700;
+}
+
+/* Game Section */
+.game {
+    padding: 2rem;
+    text-align: center;
+}
+.game-area {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.reels {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.tile {
+    width: 100px;
+    height: 100px;
+    margin: 0 0.5rem;
+    background-color: #006400;
+    border-radius: 10px;
+}
+.controls {
+    margin-bottom: 2rem;
+}
+.info {
+    background-color: #111;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+/* Transaction (Deposit/Withdraw) */
+.transaction {
+    padding: 2rem;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #111;
+    border-radius: 10px;
+    text-align: center;
+}
+.transaction h1 {
+    margin-bottom: 1rem;
+}
+.transaction form {
+    display: flex;
+    flex-direction: column;
+}
+.transaction label {
+    margin-top: 1rem;
+    text-align: left;
+}
+.transaction input, .transaction select {
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #FFD700;
+    border-radius: 5px;
+    background-color: #000;
+    color: #FFD700;
+}
+.transaction button {
+    margin-top: 1.5rem;
+}
+.instructions {
+    margin-top: 2rem;
+    text-align: left;
+}
+.instructions ol {
+    padding-left: 1rem;
+}
+
+/* Footer */
+footer {
+    padding: 1rem;
+    background-color: #006400;
+    text-align: center;
+    margin-top: auto;
+}
+footer nav a {
+    margin: 0 1rem;
+    color: #FFD700;
+    text-decoration: none;
+}
+
+/* Responsif (Mobile-First) */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content, .hero-image {
+        max-width: 100%;
+    }
+    .feature-list {
+        flex-direction: column;
+    }
+    .reels {
+        flex-direction: column;
+    }
+    .tile {
+        margin: 0.5rem 0;
+    }
+}
