@@ -1,0 +1,32 @@
+/* Reset dan Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #FFD700;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #006400;
+}
+.logo img {
+    height: 50px;
+}
+nav a {
+    margin: 0 1rem;
+    color: #FFD700;
+    text-decoration: none;
+}
+
+/* Tombol */
+.btn-primary
